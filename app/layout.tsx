@@ -3,9 +3,9 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Thota Vinay — Electrical Student',
+  title: 'Thota Vinay — Electrical and Electronics Engineering Student',
   description:
-    'Personal calling card for Thota Vinay, an electrical student who enjoys building websites and learning programming.',
+    'Personal calling card for Thota Vinay, an electrical and electronics engineering student who enjoys building websites and learning programming.',
   generator: 'v0.app',
 }
 

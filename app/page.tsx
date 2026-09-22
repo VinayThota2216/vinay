@@ -15,7 +15,7 @@ export default function Page() {
           </div>
 
           <h1 className="mt-6 text-2xl font-bold text-blue-900 sm:text-3xl">Thota Vinay</h1>
-          <p className="mt-1 text-sm font-medium uppercase tracking-wide text-blue-600">Electrical Student</p>
+          <p className="mt-1 text-sm font-medium uppercase tracking-wide text-blue-600">Electrical and Electronics Engineering Student</p>
 
           <p className="mt-6 text-pretty leading-relaxed text-blue-950/70">
             I enjoy building websites and learning programming. I am currently working on improving my web development
