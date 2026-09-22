@@ -1,42 +1,40 @@
+import { Card } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import { Mail } from "lucide-react"
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-blue-50 px-6 py-12">
-      <section
-        aria-labelledby="card-name"
-        className="w-full max-w-md rounded-2xl border border-blue-100 bg-white p-8 shadow-lg sm:p-10"
-      >
-        <div className="mb-6 flex items-center gap-4">
+    <main className="flex min-h-dvh items-center justify-center bg-blue-50 px-4 py-12">
+      <Card className="w-full max-w-md border-blue-100 p-8 sm:p-10">
+        <div className="flex flex-col items-center text-center">
           <div
+            className="flex h-24 w-24 items-center justify-center rounded-full bg-blue-600 text-3xl font-semibold text-white"
             aria-hidden="true"
-            className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-blue-600 text-2xl font-semibold text-white"
           >
             TV
           </div>
-          <div>
-            <h1 id="card-name" className="text-2xl font-bold text-balance text-blue-900">
-              Thota Vinay
-            </h1>
-            <p className="mt-1 font-medium text-blue-600">Computer Science Student</p>
+
+          <h1 className="mt-6 text-2xl font-bold text-blue-900 sm:text-3xl">Thota Vinay</h1>
+          <p className="mt-1 text-sm font-medium uppercase tracking-wide text-blue-600">Electrical Student</p>
+
+          <p className="mt-6 text-pretty leading-relaxed text-blue-950/70">
+            I enjoy building websites and learning programming. I am currently working on improving my web development
+            skills.
+          </p>
+
+          <div className="mt-8 w-full border-t border-blue-100 pt-6">
+            <Button asChild className="h-auto w-full bg-blue-600 py-3 hover:bg-blue-700">
+              <a
+                href="mailto:vinaythota543@gmail.com"
+                className="flex items-center justify-center gap-2 whitespace-normal break-all"
+              >
+                <Mail className="h-4 w-4 shrink-0" aria-hidden="true" />
+                vinaythota543@gmail.com
+              </a>
+            </Button>
           </div>
         </div>
-
-        <p className="text-pretty leading-relaxed text-slate-600">
-          I enjoy building websites and learning programming. I am currently working on improving my web development
-          skills.
-        </p>
-
-        <div className="mt-8 border-t border-blue-100 pt-6">
-          <a
-            href="mailto:vinaythota543@gmail.com"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3 font-medium text-white transition-colors hover:bg-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-          >
-            <Mail className="h-5 w-5" aria-hidden="true" />
-            vinaythota543@gmail.com
-          </a>
-        </div>
-      </section>
+      </Card>
     </main>
   )
 }

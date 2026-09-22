@@ -3,18 +3,15 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Thota Vinay — Computer Science Student',
+  title: 'Thota Vinay — Electrical Student',
   description:
-    'Personal calling card for Thota Vinay, a computer science student who enjoys building websites and learning programming.',
+    'Personal calling card for Thota Vinay, an electrical student who enjoys building websites and learning programming.',
   generator: 'v0.app',
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light dark',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+  colorScheme: 'light',
+  themeColor: '#2563eb',
 }
 
 export default function RootLayout({
